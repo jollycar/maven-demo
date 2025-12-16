@@ -1,0 +1,41 @@
+<settings>
+    <servers>
+        <server>
+            <id>bloomreach-maven2-enterprise</id>
+            <username>username</username>
+            <password>password</password>
+        </server>
+    </servers>
+    <profiles>
+        <profile>
+            <id>default</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <repositories>
+                <repository>
+                    <id>bloomreach-maven2-enterprise</id>
+                    <name>Bloomreach Maven 2 Enterprise</name>
+                    <url>https://maven.bloomreach.com/repository/maven2-enterprise/</url>
+                    <releases>
+                        <updatePolicy>never</updatePolicy>
+                        <checksumPolicy>fail</checksumPolicy>
+                    </releases>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>bloomreach-maven2-enterprise</id>
+                    <name>Bloomreach Maven 2 Enterprise</name>
+                    <url>https://maven.bloomreach.com/repository/maven2-enterprise/</url>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                </pluginRepository>
+            </pluginRepositories>
+        </profile>
+    </profiles>
+</settings>
